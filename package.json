@@ -1,0 +1,36 @@
+{
+  "name": "playwright-accelerator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "test": "playwright test",
+    "postinstall": "playwright install",
+    "prepare": "husky",
+    "lint": "eslint . && tsc --noEmit && markdownlint '**/*.md'",
+    "lint:fix": "eslint --fix . && markdownlint '**/*.md' --fix",
+    "commitlint": "commitlint --edit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.1",
+    "commitlint": "^19.8.1",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "husky": "^9.1.7",
+    "markdownlint-cli": "^0.45.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
+  },
+  "engines": {
+    "node": ">=20.13.1"
+  },
+  "packageManager": "yarn@4.9.2"
+}
