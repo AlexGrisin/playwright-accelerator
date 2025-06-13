@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es2018",
+        "module": "commonjs",
+        "removeComments": true,
+        "noImplicitAny": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "strictPropertyInitialization": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "@data": [
+                "src/data/index.ts"
+            ],
+            "@fixtures": [
+                "src/fixtures/index.ts"
+            ],
+            "@pageObjects": [
+                "src/pageObjects/index.ts"
+            ],
+            "@utils": [
+                "src/utils/index.ts"
+            ],
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
